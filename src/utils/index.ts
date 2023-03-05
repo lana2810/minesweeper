@@ -1,8 +1,8 @@
 import { CellValue, CellState } from "../types";
 
-export const MAX_ROWS = 10;
-export const MAX_COLUMNS = 10;
-export const COUNT_BOMB = 5;
+export const MAX_ROWS = 16;
+export const MAX_COLUMNS = 16;
+export const COUNT_BOMB = 40;
 
 export function getRandomIndex(num: number) {
   return Math.floor(Math.random() * num);

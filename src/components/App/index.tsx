@@ -103,6 +103,7 @@ const App: React.FC = () => {
     // начало игры
     if (!game && !isLose && !isWin) {
       let isABomb = copyCells[row][column].value === CellValue.bomb;
+      console.log(isABomb);
       while (isABomb) {
         copyCells = generateField();
         if (copyCells[row][column].value !== CellValue.bomb) {
@@ -174,9 +175,8 @@ const App: React.FC = () => {
   //-------------------------------------------------------------------------//
 
   const handleClickIcon = () => {
-    alert("Начинаем!");
     setBombCounter(COUNT_BOMB);
-    setGame(true);
+    setGame(false);
     setCells(generateField());
     setLose(false);
     setIsWin(false);

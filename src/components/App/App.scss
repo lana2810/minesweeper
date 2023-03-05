@@ -17,8 +17,8 @@
 
 .Body {
   display: grid;
-  grid-template-rows: repeat(10, 1fr);
-  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(16, 1fr);
+  grid-template-columns: repeat(16, 1fr);
   margin-top: 14px;
   @include borders(dimGray, white);
 }
